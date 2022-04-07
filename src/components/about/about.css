@@ -1,0 +1,46 @@
+#about{
+    height: 60vh;
+    overflow: hidden;
+    margin: 20px;
+}
+.about-container{
+    padding-top: 4rem;
+    text-align: justify;
+    position: relative;
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+.about-pic{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    float: left;
+    padding: 2rem;
+}
+.about-img{
+    border-radius: 12rem 12rem 12rem 12rem;
+}
+@media screen and (max-width: 1024px) {
+    #about{
+        height: 80vh;
+    }
+    .about-pic{
+        padding: 1rem;
+        padding-top: 4rem;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 600px) {
+    #about{
+        height: 100vh;
+    }
+    .about-pic{
+        padding: 0.5rem;
+        padding-top: 8rem;
+        width: 30%;
+    }
+    .about-container{
+        font-size: 0.8rem;
+    }
+}
