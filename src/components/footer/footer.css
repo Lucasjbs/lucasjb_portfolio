@@ -1,0 +1,31 @@
+footer{
+    background: #000;
+    text-align: center;
+    height: 30vh;
+    width: 100%;
+    overflow: hidden;
+}
+footer h2{
+    line-height: 2rem;
+}
+.footer-left-container{
+    width: 48%;
+    float: left;
+    padding: 1rem;
+}
+.footer-right-container{
+    width: 48%;
+    float: right;
+    padding: 1rem;
+}
+footer a{
+    width: max-content;
+    display: block;
+    color: var(--color-light);
+}
+
+@media screen and (max-width: 800px) {
+    .footer-left-container{
+        padding: 1rem;
+    }
+}

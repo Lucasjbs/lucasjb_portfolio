@@ -1,0 +1,100 @@
+.project-container{
+    padding: 2px;
+    height: 100%;
+    overflow: hidden;
+}
+h2{
+    text-align: center;
+}
+.language-progress{
+    display: block;
+    padding: 2px;
+}
+.language-progress label{
+    width: 20%;
+    display: inline-block;
+    padding: 2px;
+}
+.language-progress progress{
+    width: 30%;
+    padding: 1px;
+    padding-right: 2%;
+}
+progress::-webkit-progress-value {
+    background: goldenrod;
+    border-radius: 2rem;
+}
+progress::-webkit-progress-bar {
+    background: var(--color-primary-variant);
+    border-radius: 2rem;
+}
+
+.card{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    text-align: justify;
+    padding: 4px;
+    margin: 12px;
+    width: 30%;
+    height: 50vh;
+    float: left;
+    font-size: 0.9rem;
+    color: var(--color-white);
+    background-color: var(--color-bg-variant);
+    border-color: var(--color-primary-variant);
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: 3px;
+}
+.card img{
+    padding: 6px;
+    border-radius: 1rem;
+}
+.card a{
+    grid-column: 1;
+    grid-row: 4;
+    font-size: 0.9rem;
+    margin: 2px;
+    padding: 0.2rem;
+    background: none;
+    color: var(--color-white);
+}
+.card .btn-primary{
+    margin-left: 100px;
+    float: right;
+    grid-column: 1;
+}
+
+@media screen and (max-width: 800px) {
+    .card{
+        width: 28%;
+        font-size: 0.8rem;
+    }
+    .card img{
+        padding: 4px;
+    }
+    .card a{
+        grid-column: 1;
+        grid-row: 4;
+        font-size: 0.6rem;
+        margin: 1px;
+        padding: 0.1rem;
+    }
+    .card .btn-primary{
+        margin-left: 70px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .language-progress progress{
+        width: 30%;
+        padding: 3px;
+        padding-right: 2%;
+        padding-left: 6%;
+    }
+    .card{
+        margin: 10px;
+        margin-left: 8%;
+        width: 80%;
+        font-size: 0.8rem;
+    }
+}

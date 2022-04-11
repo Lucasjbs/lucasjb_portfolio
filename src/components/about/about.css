@@ -1,5 +1,5 @@
 #about{
-    height: 60vh;
+    height: 80vh;
     overflow: hidden;
     margin: 20px;
 }
@@ -22,9 +22,6 @@
     border-radius: 12rem 12rem 12rem 12rem;
 }
 @media screen and (max-width: 1024px) {
-    #about{
-        height: 80vh;
-    }
     .about-pic{
         padding: 1rem;
         padding-top: 4rem;

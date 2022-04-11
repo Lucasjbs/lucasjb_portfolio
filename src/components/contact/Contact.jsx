@@ -1,28 +1,41 @@
 import React from 'react'
+import {BsLinkedin} from 'react-icons/bs'
+import {CgMail} from 'react-icons/cg'
+import {BsGithub} from 'react-icons/bs'
+import './contact.css'
 
 function Contact() {
   return (
     <section id='contact'>
       <h2>Contact Me</h2>
-
       
-      <ul>
-        <ol><h5>Email</h5></ol>
-        <ol><h5>LinkedIn</h5></ol>
-        <ol><h5>GitHub</h5></ol>
-        <ol><h5>CodeSandbox</h5></ol>
-        <ol><h5>RocketSeat</h5></ol>
-        <ol><h5>Discord</h5></ol>
-      </ul>
+      <div className='contact-card-layout'>
+        <div className='contact-card'>
+          <a href='https://www.linkedin.com/in/lucas-junqueira-bastos-85b89b203/' target="_blank" rel="noreferrer" ><BsLinkedin /></a>
+          <p>LinkedIn</p>
+          <h6>lucas-junqueira-bastos-85b89b203</h6>
+        </div>
+        <div className='contact-card'>
+          <a href='https://mail.google.com/mail/' target="_blank" rel="noreferrer" ><CgMail /></a>
+          <p>Email</p>
+          <h6>lucasjbastos26@gmail.com</h6>
+        </div>
+        <div className='contact-card'>
+          <a href='https://github.com/Lucasjbs' target="_blank" rel="noreferrer" ><BsGithub /></a>
+          <p>GitHub</p>
+          <h6>Lucasjbs</h6>
+        </div>
+      </div>
 
-
-      <h4>Direct Form:</h4>
-      <form>
-        <input type='text'></input>
-        <input type='text'></input>
-        <input type='text'></input>
-        <button type='btn'>Submit</button>
-      </form>
+      <div className='contact-container'>
+        <h4>Direct Form:</h4>
+        <form>
+          <input type='text' placeholder='Your Name'></input>
+          <input type='text' placeholder='Your Email'></input>
+          <textarea placeholder='Message' rows={16}></textarea>
+          <button className='btn'>Submit</button>
+        </form>
+      </div>
     </section>
   )
 }
